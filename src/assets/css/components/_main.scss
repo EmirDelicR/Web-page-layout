@@ -1,0 +1,56 @@
+.pages-stack {
+  z-index: 100;
+  pointer-events: none;
+  perspective: 1200px;
+  perspective-origin: 50% -50%;
+
+  .page {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    pointer-events: auto;
+    background: $page-background;
+    box-shadow: 0 -1px 10px $box-shadow;
+    padding: 5em 2em;
+    color: $nav-link-hover;
+
+    &.page--inactive {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      opacity: 0;
+    }
+
+    .page-name {
+      position: absolute;
+      right: 4%;
+      top: 2%;
+    }
+  }
+
+  &.pages-stack--open .page {
+    cursor: pointer;
+    transition: transform 0.45s, opacity 0.45s;
+    transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .pages-stack {
+    .page {
+      .page-name {
+        left: 4%;
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 740px) {
+  .pages-stack {
+    .page {
+      font-size: $fs-14;
+    }
+  }
+}

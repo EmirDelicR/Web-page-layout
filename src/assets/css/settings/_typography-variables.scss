@@ -1,0 +1,59 @@
+/**
+* $name-number  
+*    - number is size in px but px is converted to em
+*/
+
+/* Font size */
+$fs-10: 0.625em;
+$fs-11: 0.6875em;
+$fs-12: 0.75em;
+$fs-13: 0.8125em;
+$fs-14: 0.875em;
+$fs-15: 0.9375em;
+$fs-16: 1em;
+$fs-18: 1.125em;
+$fs-20: 1.25em;
+$fs-24: 1.5em;
+$fs-28: 1.75em;
+$fs-36: 2.25em;
+
+/* Line spacing */
+$ls-1: 0.15em;
+$ls-2: 0.05em;
+$ls-3: 0.0125em; // 0.2px;
+$ls-4: 0.010625em; // 0.17px;
+$ls-5: 0.009375em; // 0.15px;
+$ls-6: 0.00875em; // 0.14px;
+$ls-7: 0.008125em; // 0.13px;
+$ls-8: 0.0075em; // 0.12px;
+$ls-9: 0.006875em; // 0.11px;
+$ls-10: 0.00625em; // 0.1px;
+$ls-11: 0.005625em; // 0.09px;
+$ls-12: 0.005em; // 0.08px;
+
+/* Line height */
+$lh-12: 0.75em;
+$lh-14: 0.875em;
+$lh-18: 1.125em;
+$lh-20: 1.25em;
+$lh-21: 1.3125em;
+$lh-22: 1.375em;
+$lh-24: 1.5em;
+$lh-25: 1.5625em;
+$lh-26: 1.625em;
+$lh-33: 2.0625em;
+$lh-42: 2.625em;
+
+/* Font weight */
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+$fw-black: 900;
+
+/* Font names */
+$source-sans-pro: 'Source Sans Pro';
+
+/* Font paths */
+$path-sans: 'url_to_font';
+
+$main-font: $source-sans-pro;

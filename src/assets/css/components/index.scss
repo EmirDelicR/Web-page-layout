@@ -1,0 +1,19 @@
+html,
+body {
+  overflow: hidden;
+  height: 100vh;
+}
+
+body {
+  background-color: $body-background;
+  color: $text-color;
+  *,
+  ::after,
+  ::before {
+    box-sizing: border-box;
+  }
+}
+@import 'nav-bar';
+@import 'menu-button';
+@import 'main';
+@import 'language-switcher';
